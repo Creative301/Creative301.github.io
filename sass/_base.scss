@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5
+
+  @media only screen and (max-width: $bp-small){
+    font-size: 56.25%; // 1rem = 9px; 9px/16px = 56.25
+  }
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  // line-height: 1.6;
+  color: $black-2;
+}
+
+section {
+  padding: 7rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

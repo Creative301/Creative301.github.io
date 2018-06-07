@@ -1,0 +1,358 @@
+// Navigation 
+nav {
+  @media only screen and (max-width: $bp-medium){
+    background-color: $white;
+  }
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  color: $white !important;
+  font-size: 3rem;
+  font-weight: 700;
+
+  @media only screen and (max-width: $bp-medium){
+    color: $blue-2 !important;
+  }
+}
+
+// Hide hamburger menu border and outline
+.navbar-toggler {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    @media only screen and (max-width: $bp-medium){
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      
+    }
+    &:nth-child(1) {
+      margin-right: 2rem;
+
+
+    }
+  }
+  .nav-link {
+    color: $white !important;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s;
+
+    @media only screen and (max-width: $bp-medium){
+      color: $blue-2 !important;
+
+    }
+
+    &:hover {
+      border-bottom: 2px solid $white;
+
+      @media only screen and (max-width: $bp-medium){
+        color: $blue-2 !important;
+        border-bottom: 2px solid $blue-2;
+      }
+    }
+
+
+  }
+}
+
+// Hero
+.hero {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, $blue-2, $blue-1);
+  
+  &__inner {
+    h1 {
+      font-size: 4rem;
+      font-weight: 300;
+      color: $white;
+      margin-bottom: 5rem;
+      line-height: 1.5;
+
+      @media only screen and (max-width: $bp-small){
+        font-size: 3rem;
+        margin-bottom: 7rem;
+      }
+    }
+
+    .btn {
+      @media only screen and (max-width: $bp-small){
+        display:block;
+        width: 100%;
+        font-weight: 400;
+      }
+    }
+
+    &-btn-hire {
+      color: $blue-2;
+      margin-right: 2rem;
+      background-color: $white;
+      transition: all .3s;
+      &:hover {
+        color: $white;
+        background-color: transparent;
+        @include border-1;
+      }
+
+      @media only screen and (max-width: $bp-small){
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-btn-portfolio {
+        @include border-1;
+        background-color: none;
+        color: $white;
+        transition: all .3s;
+        &:hover {
+          background-color: $white;
+          color: $blue-2;
+        }
+      }
+  }
+}
+
+
+// About
+.about {
+  h1 {
+    margin-bottom: 5rem;
+  }
+
+  &__me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__picture {
+    width: 17.2rem;
+    height: 17.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__skills {
+    // background-color: lightblue;
+    padding: 2rem;
+    color: $white;
+
+
+    &-list {
+      // line-height: 2.5rem;
+      display: inline-block;
+      font-size: 1.4rem;
+      width: 100%;
+      height: 2.5rem;
+      margin-bottom: 1rem;
+      background-color: $blue-2;
+      p {
+        display: inline-block;
+        text-align: center;
+        width: 10rem;
+        height: 2.5rem;
+        background-color: $blue-1;     
+      }
+    }
+
+    &-progress {
+      text-align: right;
+      padding-right: .5rem;
+      float: right;
+      background-color: $black-4;
+      height: 2.5rem;  
+      &--90 {
+        width: 4rem;
+      }  
+      &--80 {
+        width: 6rem;
+      }
+      &--70 {
+        width: 8rem;
+      }
+    }
+  }
+}
+// End About
+
+
+// Services
+.services {
+  padding: 7rem 0;
+  text-align: center;
+  background-color: $grey-light-6;
+  @media only screen and (max-width: $bp-large) {
+    padding-bottom: 5rem;
+  }
+
+  &__description {
+    background-color: $white;
+    padding: 4rem 0;
+    border-radius: 5px;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 2rem;
+    }
+    
+    @include shadow-1;
+    .ion {
+      font-size: 5rem;
+      color: $blue-2;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+}
+// End Services
+
+
+// Portfolio
+.portfolio {
+
+  @media only screen and (max-width: $bp-small) {
+    padding-bottom: 4rem;
+  }
+  h1 {
+    margin-bottom: 5rem;
+  }
+
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .col-sm-4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__thumb {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $black-2;
+    position: relative;
+  
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 3rem;
+    }     
+   
+    img {   
+      width: 100%;
+      height: auto;
+      transform: scale(1);
+      transition: all .3s;
+
+      &:hover {
+        transform: scale(.9);
+      }
+    }
+
+    &__caption {
+      font-size: 1.4rem;
+      text-align: center;
+      position: absolute;
+      bottom: -5rem;
+      padding: 1rem;
+      line-height: 1.5;
+      width: 100%;
+      color: $white;
+      background-color: rgba($black-1, .75);
+      opacity: 0;
+      transition: all .3s;
+
+      @media only screen and (min-resolution: 192dpi) and (min-width: 600px),(max-width: $bp-small) {
+       opacity: 1;
+       bottom: 0;
+      }  
+
+ 
+    }
+
+    &:hover &__caption {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+}
+// End Portfolio
+
+
+// Footer 
+.footer {
+  padding: 3rem 0;
+  background-color: $blue-2;
+  color: $white;
+  font-size: 1.2rem;
+  line-height: 1;
+
+  .row {
+
+    & > * {
+      @media only screen and (max-width: $bp-medium) {
+        &:not(:last-child) {margin-bottom: .7rem;}
+       } 
+    }
+
+  }
+
+  &__email {
+    text-align: left;
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+     } 
+
+    p {
+      display: inline-block;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+
+  }
+
+  &__social {
+    // background-color: red;
+    text-align: right;
+    margin-top: -3px;
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+     } 
+  
+  a:link,
+  a:visited {
+    color: $white;
+    font-size: 2rem;
+  }    
+  }
+}
+// End Footer
