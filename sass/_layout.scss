@@ -208,16 +208,16 @@ nav {
     }
     
     @include shadow-1;
-    .ion {
-      font-size: 5rem;
-      color: $blue-2;
-      margin-bottom: 3rem;
-    }
-
     p {
       font-size: 1.6rem;
       font-weight: 600;
     }
+  }
+
+  &__icon {
+    font-size: 5rem;
+    color: $blue-2;
+    margin-bottom: 3rem;
   }
 }
 // End Services

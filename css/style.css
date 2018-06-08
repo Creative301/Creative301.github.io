@@ -260,15 +260,15 @@ img {
   }
 }
 
-.services__description .ion {
-  font-size: 5rem;
-  color: #1b7dab;
-  margin-bottom: 3rem;
-}
-
 .services__description p {
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.services__icon {
+  font-size: 5rem;
+  color: #1b7dab;
+  margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 37.5em) {
