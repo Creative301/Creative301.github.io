@@ -6,7 +6,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120785953-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-120785953-1');
@@ -20,12 +23,11 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="css/ionicons.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/lightbox.min.css">
 
-    <!--load Font Awesome-->
-    <script defer src="js/fontawesome-all.min.js"></script>
+  <!--load Font Awesome-->
+  <script defer src="js/fontawesome-all.min.js"></script>
 
 </head>
 
@@ -65,7 +67,7 @@
 
     <div class="hero__inner">
       <h1>Hello, I'm Mohammad Reza.
-        <br> I'm a Web End Developer.</h1>
+        <br> I'm a Web Designer.</h1>
 
       <a href="#portfolio" class="btn hero__inner-btn-portfolio">My Portfolio</a>
     </div>
@@ -81,67 +83,80 @@
         <div class="col-md-6 about__me">
           <img src="img/Reza.png" alt="" class="about__picture">
           <h4>Who's this guy?</h4>
-          <p>I’m a freelance Front End Developer based in Indonesia.
-            <br> I'm specializing in creating responsive website
-            <br> using HTML5, CSS3 and Bootstrap 4.
+          <p>I’m a freelance Web Designer based in Indonesia.
+            <br> I'm specialize in designing website and
+            <br> convert PSD to Responsive Website.
           </p>
         </div>
 
         <div class="col-md-6">
           <div class="about__skills">
-
-            <div class="about__skills-list">
-              <p>HTML</p>
-              <div class="about__skills-progress about__skills-progress--90">
-                90%
+            <div class="about__skills__box">
+              <p class="about__skills__type">HTML</p>
+              <div class="about__skills-list">
+                <div class="about__skills-progress about__skills-progress--90">
+                  90%
+                </div>
               </div>
             </div>
-            <div class="about__skills-list">
-              <p>CSS</p>
-              <div class="about__skills-progress about__skills-progress--90">
-                90%
+            <div class="about__skills__box">
+              <p class="about__skills__type">CSS</p>
+              <div class="about__skills-list">
+                <div class="about__skills-progress about__skills-progress--90">
+                  90%
+                </div>
               </div>
             </div>
-            <div class="about__skills-list">
-              <p>SASS</p>
-              <div class="about__skills-progress about__skills-progress--80">
-                80%
+            <div class="about__skills__box">
+              <p class="about__skills__type">SASS</p>
+              <div class="about__skills-list">
+                <div class="about__skills-progress about__skills-progress--80">
+                  80%
+                </div>
               </div>
             </div>
-            <div class="about__skills-list">
-              <p>Javascript</p>
-              <div class="about__skills-progress about__skills-progress--70">
-                70%
+            <div class="about__skills__box">
+              <p class="about__skills__type">Javascript</p>
+              <div class="about__skills-list">
+                <div class="about__skills-progress about__skills-progress--50">
+                  50%
+                </div>
               </div>
             </div>
-            <div class="about__skills-list">
-              <p>jQuery</p>
-              <div class="about__skills-progress about__skills-progress--70">
-                70%
+            <div class="about__skills__box">
+              <p class="about__skills__type">jQuery</p>
+              <div class="about__skills-list">
+                <div class="about__skills-progress about__skills-progress--50">
+                  50%
+                </div>
               </div>
             </div>
-            <div class="about__skills-list">
-              <p>Grunt</p>
-              <div class="about__skills-progress about__skills-progress--70">
-                70%
+            <div class="about__skills__box">
+              <p class="about__skills__type">WordPress Theme</p>
+              <div class="about__skills-list">
+                <div class="about__skills-progress about__skills-progress--60">
+                  60%
+                </div>
               </div>
-            </div>
-            <div class="about__skills-list">
-              <p>Bootstrap</p>
-              <div class="about__skills-progress about__skills-progress--90">
-                90%
-              </div>
-            </div>
-            <div class="about__skills-list">
-              <p>Photoshop</p>
-              <div class="about__skills-progress about__skills-progress--70">
-                70%
+              <div class="about__skills__box">
+                <p class="about__skills__type">Bootstrap</p>
+                <div class="about__skills-list">
+                  <div class="about__skills-progress about__skills-progress--80">
+                    80%
+                  </div>
+                </div>
+                <div class="about__skills__box">
+                  <p class="about__skills__type">Photoshop</p>
+                  <div class="about__skills-list">
+                    <div class="about__skills-progress about__skills-progress--70">
+                      70%
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
   </section>
   <!-- End About Section -->
 
@@ -151,7 +166,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="services__description">
             <div class="services__icon">
-                <i class="fas fa-code"></i>
+              <i class="fas fa-code"></i>
             </div>
 
             <p>Newest Technology</p>
@@ -159,24 +174,24 @@
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="services__description">
-              <div class="services__icon">
-            <i class="fas fa-mobile-alt"></i>
+            <div class="services__icon">
+              <i class="fas fa-mobile-alt"></i>
             </div>
             <p>Responsive Design</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="services__description">
-              <div class="services__icon">
-            <i class="fas fa-rocket"></i>
+            <div class="services__icon">
+              <i class="fas fa-rocket"></i>
             </div>
             <p>Fast Load Times</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="services__description">
-              <div class="services__icon">
-            <i class="fas fa-handshake"></i>
+            <div class="services__icon">
+              <i class="fas fa-handshake"></i>
             </div>
             <p>Intuitive UX/UI</p>
           </div>
@@ -192,66 +207,65 @@
       <div class="row">
         <div class="col-sm-4">
           <figure class="portfolio__thumb">
-            <a href="img/Samples/Phone.com.jpg" data-lightbox="portfolio" >
-              <img srcset="img/Portfolio/Phone-sm_1x.png 1x, img/Portfolio/Phone-lg_2x.png 2x" src="img/Portfolio/Phone-sm_1x.png" alt="Phone.com website thumbnail">
-            </a>
-            <figcaption class="portfolio__thumb__caption">
-              Bootstrap 4, Sass, Responsive, jQuery
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-sm-4">
-          <figure class="portfolio__thumb">
-            <a href="img/Samples/Hall Aerial Services.jpg" data-lightbox="portfolio" >
+            <a href="img/Samples/Hall Aerial Services.jpg" target="_blank">
               <img srcset="img/Portfolio/Hall-sm_1x.png 1x, img/Portfolio/Hall-lg_2x.png 2x" src="img/Portfolio/Hall-sm_1x.png" alt="Hall Aerial Services website thumbnail">
             </a>
             <figcaption class="portfolio__thumb__caption">
-              Bootstrap 4, Responsive, jQuery
+              Hall Aerial Services
             </figcaption>
           </figure>
-
         </div>
         <div class="col-sm-4">
           <figure class="portfolio__thumb">
-            <a href="img/Samples/Appscale.jpg" data-lightbox="portfolio" >
+            <a href="img/Samples/Phone.com.jpg" target="_blank">
+              <img srcset="img/Portfolio/Phone-sm_1x.png 1x, img/Portfolio/Phone-lg_2x.png 2x" src="img/Portfolio/Phone-sm_1x.png" alt="Phone.com website thumbnail">
+            </a>
+            <figcaption class="portfolio__thumb__caption">
+              Phone.com
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-4">
+          <figure class="portfolio__thumb">
+            <a href="img/Samples/Appscale.jpg" target="_blank">
               <img srcset="img/Portfolio/Appscale-sm_1x.png 1x, img/Portfolio/Appscale-lg_2x 2x" src="img/Portfolio/Appscale-sm_1x.png"
                 alt="Appscale website thumbnail">
             </a>
             <figcaption class="portfolio__thumb__caption">
-              Bootstrap 4, Sass, Responsive, jQuery
+              AppScale
             </figcaption>
           </figure>
 
         </div>
         <div class="col-sm-4">
           <figure class="portfolio__thumb">
-            <a href="img/Samples/cablesandkits.jpg" data-lightbox="portfolio" >
+            <a href="img/Samples/cablesandkits.jpg" target="_blank">
               <img srcset="img/Portfolio/cablesandkits-sm_1x.png 1x, img/Portfolio/cablesandkits-lg_2x.png 2x" src="img/Portfolio/cablesandkits-sm_1x.png"
                 alt="Cable & Kits website thumbnail">
             </a>
             <figcaption class="portfolio__thumb__caption">
-              Bootstrap 4, Sass, Responsive, jQuery
+              Cables &amp; Kits
             </figcaption>
           </figure>
         </div>
         <div class="col-sm-4">
           <figure class="portfolio__thumb">
-            <a href="img/Samples/Hall Aerial Services.jpg" data-lightbox="portfolio" >
+            <a href="img/Samples/Marbella.jpg" target="_blank">
               <img srcset="img/Portfolio/Marbella-sm_1x.png 1x, img/Portfolio/Marbella-lg_2x.png 2x" src="img/Portfolio/Marbella-sm_1x.png"
-                alt="Appscale website thumbnail">
+                alt="Marbella website thumbnail">
             </a>
             <figcaption class="portfolio__thumb__caption">
-              Bootstrap 4, Sass, Responsive, jQuery
+              Marbella
             </figcaption>
           </figure>
         </div>
         <div class="col-sm-4">
           <figure class="portfolio__thumb">
-            <a href="img/Samples/Weedoo.jpg" data-lightbox="portfolio" >
-              <img srcset="img/Portfolio/Weedoo-sm_1x.png 1x, img/Portfolio/Weedoo-lg_2x.png 2x" src="img/Portfolio/Weedoo-sm_1x.png" alt="Appscale website thumbnail">
+            <a href="img/Samples/Weedoo.jpg" target="_blank">
+              <img srcset="img/Portfolio/Weedoo-sm_1x.png 1x, img/Portfolio/Weedoo-lg_2x.png 2x" src="img/Portfolio/Weedoo-sm_1x.png" alt="Weedooe website thumbnail">
             </a>
             <figcaption class="portfolio__thumb__caption">
-              HTML5, CSS3, Responsive, JavaScript
+              Weedoo
             </figcaption>
           </figure>
         </div>
@@ -295,7 +309,7 @@
   </div>
   <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
   <script src="js/lightbox.min.js"></script>
 </body>
 

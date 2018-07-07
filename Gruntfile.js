@@ -16,6 +16,27 @@ module.exports = function(grunt) {
        }]
       }
     },
+    cssmin: {
+      options: {
+        mergeIntoShorthands: false,
+        roundingPrecision: -1
+      },
+      target: {
+        files: {
+          'css/style.min.css': ['css/style.css']
+        }
+      }
+    },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      my_target: {
+        files: {
+          'js/script.min.js': ['js/script.js']
+        }
+      }
+    },
     imagemin: {
       png: {
         options: {
@@ -66,20 +87,26 @@ module.exports = function(grunt) {
       }
     },
 
-
-    
     watch: {
-      files: 'sass/**/*.scss',
-      tasks: 'sass'
+      sass: {
+        files: ['sass/**/*.scss'],
+        tasks: ['sass']
+      },
+      js: {
+        files: ['js/script.js'],
+        tasks: ['uglify']
+      }
     }
-    
+
   });
 
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-responsive-images')
   grunt.loadNpmTasks('grunt-contrib-watch');   
 
-  grunt.registerTask('default', ['sass', 'imagemin', 'responsive_images','watch']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'imagemin', 'responsive_images','watch']);
 
 };
