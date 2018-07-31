@@ -1,17 +1,11 @@
 @import 'css/animate.css';
 @import 'css/font-awesome.min.css';
 
-
 /* Base CSS */
 body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   background-color: #fff;
 }
-
-/* @font-face {
-  font-family: slick;
-  src: url(fonts/slick.woff);
-} */
 
 img {
   max-width: 100%;
@@ -32,7 +26,6 @@ img {
   padding-bottom: 80px;
 }
 /* End Base CSS */
-
 
 /* Nav */
 nav {
@@ -55,7 +48,6 @@ nav a.navbar-brand {
     border-bottom: 3px solid #000;
 }
 /* End Nav */
-
 
 /* Hero */
 .jumbotron {
@@ -108,7 +100,6 @@ nav a.navbar-brand {
 /* Why */
 .why h3 {
   margin-top: -20px;
-  /* background-color: lightblue */
 }
 
 .why p {
@@ -139,7 +130,6 @@ nav a.navbar-brand {
 }
 /* End Industries */
 
-
 /* Clients */
 .clients img {
   opacity: .5;
@@ -147,7 +137,6 @@ nav a.navbar-brand {
   height: 100%;
 }
 /* End Clients */
-
 
 /* Testimonials */
 .testimonials {
@@ -228,7 +217,6 @@ nav a.navbar-brand {
   padding-left: 20px;
 }
 /* End Testimonials */
-
 
 /* Aerial Photo */
 #photo .photo-item {
