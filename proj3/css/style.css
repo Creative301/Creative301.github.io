@@ -569,6 +569,10 @@ footer {
 /* End Contact banner section */
 
 /* Contact Detail section */
+.contact-detail .col-md-6:first-child iframe{
+  width: 100%;
+}
+
 .contact-detail .col-md-6:last-child {
   text-align: left;
 }
@@ -584,9 +588,7 @@ footer {
 }
 
 @media (max-width: 575.98px) { 
-  .contact-detail .col-md-6:first-child {
-    display: none;
-  }
+
 
   .contact-detail .col-md-6:last-child {
     text-align: center;
