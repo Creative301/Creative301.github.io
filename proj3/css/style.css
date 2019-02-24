@@ -353,6 +353,11 @@ img {
   color: var(--blue-dark);
 }
 
+.announcements h3 {
+  font-weight: 700;
+  margin-top: 15px;
+} 
+
 .announcements figcaption {
   font-size: 1.4rem;
   line-height: 1.8;
