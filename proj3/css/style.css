@@ -83,6 +83,7 @@ img {
   color: var(--blue-light);
   border-bottom: 2px solid var(--blue-light);
 }
+
 /* End Header */
 
 
@@ -124,17 +125,35 @@ img {
 .hero-inner h1,
 .hero-inner h2,
 .hero-inner h3 {
-  font-size: 3.5rem;
   text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4);
 }
 
+.hero-inner h1 {
+  font-size: 3.5rem;
+}
+
+.hero-inner h2 {
+  font-size: 3rem;
+}
+
+.hero-inner h3 {
+  font-size: 2.5rem;
+}
+
 @media (min-width: 768px) {
-  .hero-inner h1,
-  .hero-inner h2,
-  .hero-inner h3 {
+  .hero-inner h1 {
     font-size: 4.5rem;
   }
+
+  .hero-inner h2 {
+    font-size: 4rem;
+  }
+
+  .hero-inner h3 {
+    font-size: 3rem;
+  }
 }
+
 /* End Hero */
 
 
@@ -173,6 +192,7 @@ img {
 .fa-hourglass-half {
   color: #ED553B;
 }
+
 /* End Info */
 
 
@@ -249,6 +269,7 @@ img {
   border-top: 3px dotted var(--blue-dark);
   border-bottom: 3px dotted var(--blue-dark);
 }
+
 /* End Overview */
 
 
@@ -337,6 +358,7 @@ img {
   opacity: 1;
   transform: translateX(0%) scale(1);
 }
+
 /* End Featured Films */
 
 
@@ -356,7 +378,7 @@ img {
 .announcements h3 {
   font-weight: 700;
   margin-top: 15px;
-} 
+}
 
 .announcements figcaption {
   font-size: 1.4rem;
@@ -367,6 +389,7 @@ img {
 .announcements2 {
   padding: 25px;
 }
+
 /* End Announcements */
 
 
@@ -422,6 +445,7 @@ img {
     padding: 0 250px;
   }
 }
+
 /* End Registration */
 
 /* Footer */
@@ -553,6 +577,7 @@ footer {
     text-align: left;
   }
 }
+
 /* End Footer */
 
 
@@ -571,10 +596,11 @@ footer {
 .contact h1 {
   font-size: 5rem;
 }
+
 /* End Contact banner section */
 
 /* Contact Detail section */
-.contact-detail .col-md-6:first-child iframe{
+.contact-detail .col-md-6:first-child iframe {
   width: 100%;
 }
 
@@ -592,7 +618,7 @@ footer {
   font-size: 1.6rem;
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
 
 
   .contact-detail .col-md-6:last-child {
@@ -602,7 +628,8 @@ footer {
   .contact-detail h2 {
     margin-top: 0;
   }
- }
+}
+
 /* End Contact Detail section */
 
 .contact-form {
@@ -646,6 +673,7 @@ footer {
 .contact-form .btn-primary:hover {
   background-color: var(--blue-light);
 }
+
 /* End Contact Page */
 
 
@@ -671,7 +699,8 @@ footer {
   margin-bottom: 20px;
 }
 
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
+
   .annoucement-page-1 .col-md-6:last-child,
   .annoucement-page-2 .col-md-6:last-child {
     padding: 0 30px;
@@ -692,6 +721,7 @@ footer {
 .annoucement-page-2 .col-md-6:first-child {
   background: url("../images/announcement_page_2.jpg") no-repeat center;
 }
+
 /* End Announcement page */
 
 
@@ -717,4 +747,5 @@ footer {
 .privacy p {
   font-size: 1.6rem;
 }
+
 /* End Privacy policy page */
